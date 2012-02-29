@@ -11,6 +11,9 @@ Ruby Bindings for the Newt Library
 Code is originally from Noritsugu Nakamura and is available at:
 http://www2s.biglobe.ne.jp/~Nori/ruby/dist/ruby-newt-20020105.tar.gz
 
+I modified it to use RARRAY_LEN, RARRAY_PTR, StringValuePtr, etc.
+
+Still trying it to make it work for 1.9.x
 
 == SYNOPSIS:
 
@@ -21,6 +24,8 @@ See http://github.com/ericsperano/ruby-newt/tree/master/examples for usage examp
 libnewt
 
 == INSTALL:
+
+gem install newgem
 
 rake install_gem
 
