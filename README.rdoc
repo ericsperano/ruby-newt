@@ -1,6 +1,6 @@
 = newt
 
-* http://github.com/espeano/ruby-newt
+* http://github.com/esperano/ruby-newt
 
 == DESCRIPTION:
 
@@ -11,9 +11,10 @@ Ruby Bindings for the Newt Library
 Code is originally from Noritsugu Nakamura and is available at:
 http://www2s.biglobe.ne.jp/~Nori/ruby/dist/ruby-newt-20020105.tar.gz
 
+
 == SYNOPSIS:
 
-See .... for examples
+See http://github.com/ericsperano/ruby-newt/tree/master/examples for usage examples.
 
 == REQUIREMENTS:
 
