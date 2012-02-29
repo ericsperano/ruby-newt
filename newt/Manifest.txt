@@ -7,7 +7,6 @@ Rakefile
 ext/ruby_newt/extconf.rb
 ext/ruby_newt/ruby_newt.c
 lib/newt.rb
-newt.gemspec
 script/console
 script/destroy
 script/generate
