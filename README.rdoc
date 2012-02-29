@@ -1,32 +1,31 @@
 = newt
 
-* http://github.com/#{github_username}/#{project_name}
+* http://github.com/espeano/ruby-newt
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Ruby Bindings for the Newt Library
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+Code is originally from Noritsugu Nakamura and is available at:
+http://www2s.biglobe.ne.jp/~Nori/ruby/dist/ruby-newt-20020105.tar.gz
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+See .... for examples
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+libnewt
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+rake install_gem
 
 == LICENSE:
 
 (The MIT License)
-
-Copyright (c) 2012 FIXME full name
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
