@@ -29,30 +29,30 @@ $ sudo apt-get install libnewt-dev
 
 === Mac OS X
 
-$ sudo port install libnewt
+  $ sudo port install libnewt
 
 Then, define this environment variable:
-$ export LIBRARY_PATH="/opt/local/lib/"
+  $ export LIBRARY_PATH="/opt/local/lib/"
 
 For some reason this does not fully work:
-$ export C_INCLUDE_PATH="/opt/local/include/" 
+  $ export C_INCLUDE_PATH="/opt/local/include/" 
 
 So symlink it:
-$ sudo ln -s /opt/local/include/newt.h  /usr/include/
+  $ sudo ln -s /opt/local/include/newt.h  /usr/include/
 
 == INSTALL:
 
 === RugyGems
 	
-	$ gem install newt
+  $ gem install newt
 
 === Sources		
- <pre><code>
-	$ git clone git://github.com/ericsperano/ruby-newt
-	$ cd ruby-newt
-	$ gem install newgem
-    $ rake install_gem
-</code></pre>
+
+  $ git clone git://github.com/ericsperano/ruby-newt
+  $ cd ruby-newt
+  $ gem install newgem
+  $ rake install_gem
+
 == LICENSE:
 
 (The MIT License)
