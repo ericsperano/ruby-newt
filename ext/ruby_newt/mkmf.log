@@ -9,7 +9,7 @@ conftest.c: In function ‘t’:
 conftest.c:3: error: ‘SLsmg_refresh’ undeclared (first use in this function)
 conftest.c:3: error: (Each undeclared identifier is reported only once
 conftest.c:3: error: for each function it appears in.)
-lipo: can't figure out the architecture type of: /var/folders/2v/f81z_m654s90kbg0h3x521f40000gn/T//ccu2ilsw.out
+lipo: can't figure out the architecture type of: /var/folders/2v/f81z_m654s90kbg0h3x521f40000gn/T//ccjhObFJ.out
 checked program was:
 /* begin */
 1: /*top*/
@@ -18,13 +18,13 @@ checked program was:
 /* end */
 
 "gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin11.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L. -arch i386 -arch x86_64      -lruby -lslang  -lpthread -ldl  "
-ld: warning: ignoring file /opt/local/lib/libslang.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: ignoring file /usr/local/lib/libslang.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
 Undefined symbols for architecture i386:
   "_SLsmg_refresh", referenced from:
-      _t in ccNAhqrY.o
+      _t in ccBQoYUy.o
 ld: symbol(s) not found for architecture i386
 collect2: ld returned 1 exit status
-lipo: can't open input file: /var/folders/2v/f81z_m654s90kbg0h3x521f40000gn/T//ccm3Og54.out (No such file or directory)
+lipo: can't open input file: /var/folders/2v/f81z_m654s90kbg0h3x521f40000gn/T//cc8melEW.out (No such file or directory)
 checked program was:
 /* begin */
 1: /*top*/
@@ -45,7 +45,7 @@ conftest.c: In function ‘t’:
 conftest.c:3: error: ‘newtInit’ undeclared (first use in this function)
 conftest.c:3: error: (Each undeclared identifier is reported only once
 conftest.c:3: error: for each function it appears in.)
-lipo: can't figure out the architecture type of: /var/folders/2v/f81z_m654s90kbg0h3x521f40000gn/T//cc8Q2Wal.out
+lipo: can't figure out the architecture type of: /var/folders/2v/f81z_m654s90kbg0h3x521f40000gn/T//ccV56oKT.out
 checked program was:
 /* begin */
 1: /*top*/
@@ -54,13 +54,11 @@ checked program was:
 /* end */
 
 "gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin11.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L. -arch i386 -arch x86_64      -lruby -lnewt  -lpthread -ldl  "
-ld: warning: ignoring file /opt/local/lib/libnewt.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
-Undefined symbols for architecture i386:
-  "_newtInit", referenced from:
-      _t in ccJEJPCj.o
-ld: symbol(s) not found for architecture i386
+ld: library not found for -lnewt
 collect2: ld returned 1 exit status
-lipo: can't open input file: /var/folders/2v/f81z_m654s90kbg0h3x521f40000gn/T//ccklQVbm.out (No such file or directory)
+ld: library not found for -lnewt
+collect2: ld returned 1 exit status
+lipo: can't open input file: /var/folders/2v/f81z_m654s90kbg0h3x521f40000gn/T//ccDAMvNf.out (No such file or directory)
 checked program was:
 /* begin */
 1: /*top*/

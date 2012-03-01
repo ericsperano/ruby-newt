@@ -1,7 +1,7 @@
 .autotest
+.rvmrc
 History.txt
 Manifest.txt
-PostInstall.txt
 README.rdoc
 Rakefile
 examples/test-j.rb
