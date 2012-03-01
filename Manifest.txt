@@ -1,5 +1,4 @@
 .autotest
-.rvmrc
 History.txt
 Manifest.txt
 README.rdoc
