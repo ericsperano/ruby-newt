@@ -1,6 +1,6 @@
 = newt
 
-* http://github.com/esperano/ruby-newt
+* http://github.com/ericsperano/ruby-newt
 
 == DESCRIPTION:
 
@@ -25,9 +25,14 @@ libnewt
 
 == INSTALL:
 
-gem install newgem
+With Rugy Gems:
 
-rake install_gem
+	$ gem install newt
+	
+Or build it from the source:
+
+	$ gem install newgem
+    $ rake install_gem
 
 == LICENSE:
 
