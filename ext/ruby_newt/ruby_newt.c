@@ -6,6 +6,13 @@
  * modified by Eric Sperano
  * from 2012.02.27
  *
+ * Now using:
+ * - RARRAY_LEN() instead of RARRAY()->len
+ * - RARRAY_PTR() instead of RARRAY()->ptr
+ * - StringValuePtr instead of STR2CSTR
+ *
+ * Also added some missing cast that triggered annoying warnings.
+ *
  */
 
 #include <ruby.h>
