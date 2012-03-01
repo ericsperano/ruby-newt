@@ -31,7 +31,7 @@ The Newt library and headers.
 
   $ sudo port install libnewt
 
-Then, define thes environment variables:
+Then, define these environment variables:
   $ export LIBRARY_PATH="/opt/local/lib/"
   $ export C_INCLUDE_PATH="/opt/local/include/" 
 
