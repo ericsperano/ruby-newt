@@ -1,5 +1,6 @@
 s#!/usr/bin/env ruby
 
+require 'rubygems'
 require "newt"
 
 begin

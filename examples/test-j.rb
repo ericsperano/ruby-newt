@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'rubygems'
 require "newt"
 
 def disableCallback(cs, en)
@@ -14,21 +15,21 @@ end
 
 Newt::Screen.new
 
-Newt::Screen.draw_roottext(0, 0, "Newt ¥Æ¥¹¥È¥×¥í¥°¥é¥à")
+Newt::Screen.draw_roottext(0, 0, "Newt Â¥Ã†Â¥Â¹Â¥ÃˆÂ¥Ã—Â¥Ã­Â¥Â°Â¥Ã©Â¥Ã ")
 Newt::Screen.push_helpline("")
-Newt::Screen.draw_roottext(-50, 0, "¥ë¡¼¥È¥Æ¥­¥¹¥È")
+Newt::Screen.draw_roottext(-50, 0, "Â¥Ã«Â¡Â¼Â¥ÃˆÂ¥Ã†Â¥Â­Â¥Â¹Â¥Ãˆ")
 
-Newt::Screen.open_window(2, 2, 30, 10, "£±ÈÖÌÜ¤Î¥¦¥£¥ó¥É¥¦")
-Newt::Screen.open_window(10, 5, 65, 16, "¥¦¥£¥ó¥É¥¦£²")
+Newt::Screen.open_window(2, 2, 30, 10, "Â£Â±ÃˆÃ–ÃŒÃœÂ¤ÃÂ¥Â¦Â¥Â£Â¥Ã³Â¥Ã‰Â¥Â¦")
+Newt::Screen.open_window(10, 5, 65, 16, "Â¥Â¦Â¥Â£Â¥Ã³Â¥Ã‰Â¥Â¦Â£Â²")
 
 f = Newt::Form.new
 chklist = Newt::Form.new
 
-b1 = Newt::Button.new(3, 1, "½ªÎ»")
-b2 = Newt::Button.new(18, 1, "¹¹¿·")
-r1 = Newt::RadioButton.new(20, 10, "ÁªÂò»è£±", 0, nil)
-r2 = Newt::RadioButton.new(20, 11, "ÁªÂò»è£²", 1, r1)
-r3 = Newt::RadioButton.new(20, 12, "ÁªÂò»è£³", 0, r2)
+b1 = Newt::Button.new(3, 1, "Â½ÂªÃÂ»")
+b2 = Newt::Button.new(18, 1, "Â¹Â¹Â¿Â·")
+r1 = Newt::RadioButton.new(20, 10, "ÃÂªÃ‚Ã²Â»Ã¨Â£Â±", 0, nil)
+r2 = Newt::RadioButton.new(20, 11, "ÃÂªÃ‚Ã²Â»Ã¨Â£Â²", 1, r1)
+r3 = Newt::RadioButton.new(20, 12, "ÃÂªÃ‚Ã²Â»Ã¨Â£Â³", 0, r2)
 rsf = Newt::Form.new
 #[r1, r2, r3].each {|i| rsf.add(i)}
 rsf.add(r1, r2, r3)
@@ -38,16 +39,16 @@ Newt::Screen.refresh
 
 cs = []
 for i in 0...10
-  buf = sprintf("¥Á¥§¥Ã¥¯ %d", i)
+  buf = sprintf("Â¥ÃÂ¥Â§Â¥ÃƒÂ¥Â¯ %d", i)
   cs[i] = Newt::Checkbox.new(3, 10 + i, buf, ' ', nil)
   chklist.add(cs[i])
 end
 
-l1 = Newt::Label.new(3, 6, "¥¹¥±¡¼¥ë:")
-l2 = Newt::Label.new(3, 7, "¥¹¥¯¥í¡¼¥ë:")
-l3 = Newt::Label.new(3, 8, "¥Ò¥É¥¥¥ó:")
+l1 = Newt::Label.new(3, 6, "Â¥Â¹Â¥Â±Â¡Â¼Â¥Ã«:")
+l2 = Newt::Label.new(3, 7, "Â¥Â¹Â¥Â¯Â¥Ã­Â¡Â¼Â¥Ã«:")
+l3 = Newt::Label.new(3, 8, "Â¥Ã’Â¥Ã‰Â¥Â¥Â¥Ã³:")
 e1 = Newt::Entry.new(12, 6, "", 20, 0);
-e2 = Newt::Entry.new(12, 7, "É¸½à", 20, Newt::FLAG_SCROLL)
+e2 = Newt::Entry.new(12, 7, "Ã‰Â¸Â½Ã ", 20, Newt::FLAG_SCROLL)
 e3 = Newt::Entry.new(12, 8, "", 20, Newt::FLAG_HIDDEN)
 
 #cs[0].callback( proc { print "Hello!!\n" } )
@@ -62,22 +63,22 @@ f.add(rsf, scale)
 
 lb = Newt::Listbox.new(45, 1, 6, Newt::FLAG_MULTIPLE | Newt::FLAG_BORDER |
 					   Newt::FLAG_SCROLL)
-lb.append("£±ÈÖÌÜ", 1)
-lb.append("£²ÈÖÌÜ", 2)
-lb.append("£³ÈÖÌÜ", 3)
-lb.append("£´ÈÖÌÜ", 4)
-lb.append("£¶ÈÖÌÜ", 6)
-lb.append("£·ÈÖÌÜ", 7)
-lb.append("£¸ÈÖÌÜ", 8)
-lb.append("£¹ÈÖÌÜ", 9)
-lb.append("£±£°ÈÖÌÜ", 10)
+lb.append("Â£Â±ÃˆÃ–ÃŒÃœ", 1)
+lb.append("Â£Â²ÃˆÃ–ÃŒÃœ", 2)
+lb.append("Â£Â³ÃˆÃ–ÃŒÃœ", 3)
+lb.append("Â£Â´ÃˆÃ–ÃŒÃœ", 4)
+lb.append("Â£Â¶ÃˆÃ–ÃŒÃœ", 6)
+lb.append("Â£Â·ÃˆÃ–ÃŒÃœ", 7)
+lb.append("Â£Â¸ÃˆÃ–ÃŒÃœ", 8)
+lb.append("Â£Â¹ÃˆÃ–ÃŒÃœ", 9)
+lb.append("Â£Â±Â£Â°ÃˆÃ–ÃŒÃœ", 10)
 
-lb.insert("£µÈÖÌÜ", 5, 4)
-lb.insert("£±£±ÈÖÌÜ", 11, 10)
+lb.insert("Â£ÂµÃˆÃ–ÃŒÃœ", 5, 4)
+lb.insert("Â£Â±Â£Â±ÃˆÃ–ÃŒÃœ", 11, 10)
 lb.delete(11)
 
 t = Newt::Textbox.new(45, 10, 17, 5, Newt::FLAG_WRAP)
-t.set_text("¤³¤ì¤Ï¥Æ¥­¥¹¥È¤Î¥µ¥ó¥×¥ë¤Ç¤¹¡£\nÀµ¾ï¤ËÉ½¼¨¤µ¤ì¤Æ¤¤¤Ş¤¹¤«¡©\n¤³¤ì¤ÏÃ±ÆÈ¹Ô¤Ç¤¹¡£\n¤³¤ì¤ÏÉ½¼¨¤µ¤ì¤Æ¤Ï¤¤¤±¤Ş¤»¤ó")
+t.set_text("Â¤Â³Â¤Ã¬Â¤ÃÂ¥Ã†Â¥Â­Â¥Â¹Â¥ÃˆÂ¤ÃÂ¥ÂµÂ¥Ã³Â¥Ã—Â¥Ã«Â¤Ã‡Â¤Â¹Â¡Â£\nÃ€ÂµÂ¾Ã¯Â¤Ã‹Ã‰Â½Â¼Â¨Â¤ÂµÂ¤Ã¬Â¤Ã†Â¤Â¤Â¤ÃÂ¤Â¹Â¤Â«Â¡Â©\nÂ¤Â³Â¤Ã¬Â¤ÃÃƒÂ±Ã†ÃˆÂ¹Ã”Â¤Ã‡Â¤Â¹Â¡Â£\nÂ¤Â³Â¤Ã¬Â¤ÃÃ‰Â½Â¼Â¨Â¤ÂµÂ¤Ã¬Â¤Ã†Â¤ÃÂ¤Â¤Â¤Â±Â¤ÃÂ¤Â»Â¤Ã³")
 
 f.add(lb, t)
 

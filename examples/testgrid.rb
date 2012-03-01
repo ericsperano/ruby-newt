@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'rubygems'
 require "newt"
 
 menuContents = ["One", "Two", "Three", "Four", "Five"]

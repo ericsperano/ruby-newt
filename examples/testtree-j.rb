@@ -1,41 +1,42 @@
 #!/usr/bin/env ruby
 
+require 'rubygems'
 require "newt"
 
 Newt::Screen.new
 
 checktree = Newt::CheckboxTreeMulti.new(-1, -1, 10, " ab", Newt::FLAG_SCROLL)
-checktree.add("¥Ê¥ó¥Ğ¡¼", 2, 0, Newt::ARG_APPEND)
-checktree.add("ËÜÅö¤ËËÜÅö¤ËÄ¹¤¤¥â¥Î", 3, 0, Newt::ARG_APPEND)
-checktree.add("¥Ê¥ó¥Ğ¡¼£µ", 5, Newt::FLAG_SELECTED, Newt::ARG_APPEND)
-checktree.add("¥Ê¥ó¥Ğ¡¼£¶", 6, 0, Newt::ARG_APPEND)
-checktree.add("¥Ê¥ó¥Ğ¡¼£·", 7, Newt::FLAG_SELECTED, Newt::ARG_APPEND)
-checktree.add("¥Ê¥ó¥Ğ¡¼£¸", 8, 0, Newt::ARG_APPEND)
-checktree.add("¥Ê¥ó¥Ğ¡¼£¹", 9, 0, Newt::ARG_APPEND)
-checktree.add("¥Ê¥ó¥Ğ¡¼£±£°", 10, Newt::FLAG_SELECTED, Newt::ARG_APPEND)
-checktree.add("¥Ê¥ó¥Ğ¡¼£±£±", 11, 0, Newt::ARG_APPEND)
-checktree.add("¥Ê¥ó¥Ğ¡¼£±£²", 12, Newt::FLAG_SELECTED, Newt::ARG_APPEND)
+checktree.add("Â¥ÃŠÂ¥Ã³Â¥ÃÂ¡Â¼", 2, 0, Newt::ARG_APPEND)
+checktree.add("Ã‹ÃœÃ…Ã¶Â¤Ã‹Ã‹ÃœÃ…Ã¶Â¤Ã‹Ã„Â¹Â¤Â¤Â¥Ã¢Â¥Ã", 3, 0, Newt::ARG_APPEND)
+checktree.add("Â¥ÃŠÂ¥Ã³Â¥ÃÂ¡Â¼Â£Âµ", 5, Newt::FLAG_SELECTED, Newt::ARG_APPEND)
+checktree.add("Â¥ÃŠÂ¥Ã³Â¥ÃÂ¡Â¼Â£Â¶", 6, 0, Newt::ARG_APPEND)
+checktree.add("Â¥ÃŠÂ¥Ã³Â¥ÃÂ¡Â¼Â£Â·", 7, Newt::FLAG_SELECTED, Newt::ARG_APPEND)
+checktree.add("Â¥ÃŠÂ¥Ã³Â¥ÃÂ¡Â¼Â£Â¸", 8, 0, Newt::ARG_APPEND)
+checktree.add("Â¥ÃŠÂ¥Ã³Â¥ÃÂ¡Â¼Â£Â¹", 9, 0, Newt::ARG_APPEND)
+checktree.add("Â¥ÃŠÂ¥Ã³Â¥ÃÂ¡Â¼Â£Â±Â£Â°", 10, Newt::FLAG_SELECTED, Newt::ARG_APPEND)
+checktree.add("Â¥ÃŠÂ¥Ã³Â¥ÃÂ¡Â¼Â£Â±Â£Â±", 11, 0, Newt::ARG_APPEND)
+checktree.add("Â¥ÃŠÂ¥Ã³Â¥ÃÂ¡Â¼Â£Â±Â£Â²", 12, Newt::FLAG_SELECTED, Newt::ARG_APPEND)
 
-checktree.add("¥«¥é¡¼", 1, 0, 0)
-checktree.add("ÀÖ¿§", 100, 0, 0, Newt::ARG_APPEND)
-checktree.add("Çò¿§", 101, 0, 0, Newt::ARG_APPEND)
-checktree.add("ÀÄ¿§", 102, 0, 0, Newt::ARG_APPEND)
+checktree.add("Â¥Â«Â¥Ã©Â¡Â¼", 1, 0, 0)
+checktree.add("Ã€Ã–Â¿Â§", 100, 0, 0, Newt::ARG_APPEND)
+checktree.add("Ã‡Ã²Â¿Â§", 101, 0, 0, Newt::ARG_APPEND)
+checktree.add("Ã€Ã„Â¿Â§", 102, 0, 0, Newt::ARG_APPEND)
 
-checktree.add("¥Ê¥ó¥Ğ¡¼£´", 4, 0, 3)
+checktree.add("Â¥ÃŠÂ¥Ã³Â¥ÃÂ¡Â¼Â£Â´", 4, 0, 3)
 
-checktree.add("°ì·å¤Î¿ô»ú", 200, 0, 1, Newt::ARG_APPEND)
-checktree.add("°ì", 201, 0, 1, 0, Newt::ARG_APPEND)
-checktree.add("Æó", 202, 0, 1, 0, Newt::ARG_APPEND)
-checktree.add("»°", 203, 0, 1, 0, Newt::ARG_APPEND)
-checktree.add("»Í", 204, 0, 1, 0, Newt::ARG_APPEND)
+checktree.add("Â°Ã¬Â·Ã¥Â¤ÃÂ¿Ã´Â»Ãº", 200, 0, 1, Newt::ARG_APPEND)
+checktree.add("Â°Ã¬", 201, 0, 1, 0, Newt::ARG_APPEND)
+checktree.add("Ã†Ã³", 202, 0, 1, 0, Newt::ARG_APPEND)
+checktree.add("Â»Â°", 203, 0, 1, 0, Newt::ARG_APPEND)
+checktree.add("Â»Ã", 204, 0, 1, 0, Newt::ARG_APPEND)
 
-checktree.add("Æó·å¤Î¿ô»ú", 300, 0, 1, Newt::ARG_APPEND)
-checktree.add("½½", 210, 0, 1, 1, Newt::ARG_APPEND)
-checktree.add("½½°ì", 211, 0, 1, 1, Newt::ARG_APPEND)
-checktree.add("½½Æó", 212, 0, 1, 1, Newt::ARG_APPEND)
-checktree.add("½½»°", 213, 0, 1, 1, Newt::ARG_APPEND)
+checktree.add("Ã†Ã³Â·Ã¥Â¤ÃÂ¿Ã´Â»Ãº", 300, 0, 1, Newt::ARG_APPEND)
+checktree.add("Â½Â½", 210, 0, 1, 1, Newt::ARG_APPEND)
+checktree.add("Â½Â½Â°Ã¬", 211, 0, 1, 1, Newt::ARG_APPEND)
+checktree.add("Â½Â½Ã†Ã³", 212, 0, 1, 1, Newt::ARG_APPEND)
+checktree.add("Â½Â½Â»Â°", 213, 0, 1, 1, Newt::ARG_APPEND)
 
-button = Newt::Button.new(-1, -1, "½ªÎ»")
+button = Newt::Button.new(-1, -1, "Â½ÂªÃÂ»")
 
 grid = Newt::Grid.new(1, 2)
 grid.set_field(0, 0, Newt::GRID_COMPONENT, checktree, 0, 0, 0, 1,
@@ -43,7 +44,7 @@ grid.set_field(0, 0, Newt::GRID_COMPONENT, checktree, 0, 0, 0, 1,
 grid.set_field(0, 1, Newt::GRID_COMPONENT, button, 0, 0, 0, 0,
 			  0, 0)
 
-grid.wrapped_window("¥Á¥§¥Ã¥¯¥Ü¥Ã¥¯¥¹¥Ä¥ê¡¼¥Æ¥¹¥È")
+grid.wrapped_window("Â¥ÃÂ¥Â§Â¥ÃƒÂ¥Â¯Â¥ÃœÂ¥ÃƒÂ¥Â¯Â¥Â¹Â¥Ã„Â¥ÃªÂ¡Â¼Â¥Ã†Â¥Â¹Â¥Ãˆ")
 
 form = Newt::Form.new
 form.add(checktree, button)

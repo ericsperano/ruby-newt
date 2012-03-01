@@ -2,6 +2,7 @@
 
 # ?
 
+require 'rubygems'
 require "newt"
 
 begin
