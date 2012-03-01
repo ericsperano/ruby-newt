@@ -21,16 +21,35 @@ See http://github.com/ericsperano/ruby-newt/tree/master/examples for usage examp
 
 == REQUIREMENTS:
 
-libnewt
+The Newt library and headers.
+
+=== Ubuntu:
+
+$ sudo apt-get install libnewt-dev
+
+=== Mac OS X
+
+$ sudo port install libnewt
+
+Then, define this environment variable:
+$ export LIBRARY_PATH="/opt/local/lib/"
+
+For some reason this does not fully work:
+$ export C_INCLUDE_PATH="/opt/local/include/" 
+
+So symlink it:
+$ sudo ln -s /opt/local/include/newt.h  /usr/include/
 
 == INSTALL:
 
-With Rugy Gems:
-
-	$ gem install newt
+With RugyGems:
 	
+	$ gem install newt
+		
 Or build it from the source:
-
+ 
+	$ git clone git://github.com/ericsperano/ruby-newt
+	$ cd ruby-newt
 	$ gem install newgem
     $ rake install_gem
 
