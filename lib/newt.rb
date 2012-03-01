@@ -9,5 +9,5 @@ end
 # Ruby Bindings for the Newt Library
 module Newt
   # Gem version
-  VERSION = '0.9.2'
+  VERSION = '0.9.3'
 end
