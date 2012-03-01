@@ -1,3 +1,4 @@
 pkg
 *.o
 .rvmrc
+mkmf.log
