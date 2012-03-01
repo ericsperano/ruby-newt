@@ -31,13 +31,11 @@ The Newt library and headers.
 
   $ sudo port install libnewt
 
-Then, define this environment variable:
+Then, define thes environment variables:
   $ export LIBRARY_PATH="/opt/local/lib/"
-
-For some reason this does not fully work:
   $ export C_INCLUDE_PATH="/opt/local/include/" 
 
-So symlink it:
+For some reason, it does not always find the header so symlink it:
   $ sudo ln -s /opt/local/include/newt.h  /usr/include/
 
 == INSTALL:
