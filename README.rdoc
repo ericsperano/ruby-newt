@@ -50,8 +50,9 @@ So symlink it:
 
   $ git clone git://github.com/ericsperano/ruby-newt
   $ cd ruby-newt
-  $ gem install newgem
-  $ rake install_gem
+  $ sudo gem install newgem
+  $ rake gem
+  $ sudo gem install pkg/newt*gem
 
 == LICENSE:
 
