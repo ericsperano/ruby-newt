@@ -2,3 +2,4 @@ pkg
 *.o
 .rvmrc
 mkmf.log
+ruby-new.tmproj
